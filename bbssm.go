@@ -28,7 +28,7 @@ func main() {
 
 
 func addProject(codename string) {
-    url := "http://bbsstore-service:7000/api/program"
+    url := "http://bbsstore-service:7000/api/project"
     var jsonStrStart = []byte(`{"code":"`)
     var jsonStrEnd = []byte(`"}`)
     var part1 = append(jsonStrStart, codename...)
