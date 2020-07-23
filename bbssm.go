@@ -28,7 +28,7 @@ func main() {
 
 
 func addProject(codename string) {
-    url := "http://bbsstore-service:7000/api/project"
+    url := "http://bbs-scopemanager-service:7000/api/project"
     var jsonStrStart = []byte(`{"code":"`)
     var jsonStrEnd = []byte(`"}`)
     var part1 = append(jsonStrStart, codename...)
@@ -51,7 +51,7 @@ func addProject(codename string) {
 }
 
 func addScopeLine(scopeline string, project_id string) {
-    url := "http://bbsstore-service:7000/api/scope_line"
+    url := "http://bbs-scopemanager-service:7000/api/scope_line"
     var jsonStrStart = []byte(`{"lineitem":"`)
     var jsonStrNext = []byte(`", "project_id":"`)
     var jsonStrEnd = []byte(`"}`)
